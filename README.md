@@ -6,6 +6,8 @@ Current version: **0.4.7**.
 
 ## Install
 
+First, visit [tampermonkey.net](https://www.tampermonkey.net/), choose your browser, and follow its extension-store installation prompts. Then click the Tampermonkey extension icon and choose **Create a new script**.
+
 Open `Canvas-Grade-All-by-Question.user.js`, copy its full contents into a new Tampermonkey script, and save. Enable only one copy of the script. Refresh SpeedGrader after saving or discarding any unsaved edits.
 
 The script currently matches HTTPS Canvas domains under `instructure.com` and Classic Quiz assignments in SpeedGrader. It does not support New Quizzes.
