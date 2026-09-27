@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Canvas - Grade All by Question
 // @namespace    mort.canvas
-// @version      0.4.7
+// @version      0.4.8
 // @description  Batch-edit scores and comments for one Classic Quiz question; save changed students with verification.
 // @match        https://*.instructure.com/courses/*/gradebook/speed_grader*
 // @grant        none
@@ -957,6 +957,9 @@
             `${APP_ID}-styles`;
 
         style.textContent = `
+            #${APP_ID} .mort-score { -moz-appearance: textfield; appearance: textfield; }
+            #${APP_ID} .mort-score::-webkit-inner-spin-button,
+            #${APP_ID} .mort-score::-webkit-outer-spin-button { -webkit-appearance: none; margin: 0; }
             #${APP_ID} .mort-answer-section { margin: 10px 0; padding: 12px; border: 1px solid #aab7c4; border-radius: 5px; }
             #${APP_ID} .mort-answer-student { background: #edf6ff; border-left: 4px solid #075a8c; }
             #${APP_ID} .mort-answer-key { background: #f6f7f8; }

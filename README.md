@@ -2,7 +2,7 @@
 
 A Tampermonkey userscript for batch grading one Classic Canvas Quiz question across students in SpeedGrader.
 
-Current version: **0.4.7**.
+Current version: **0.4.8**.
 
 ## Install
 
