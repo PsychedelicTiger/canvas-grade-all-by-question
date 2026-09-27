@@ -6,7 +6,13 @@ Current version: **0.4.7**.
 
 ## Install
 
-First, visit [tampermonkey.net](https://www.tampermonkey.net/), choose your browser, and follow its extension-store installation prompts. Then click the Tampermonkey extension icon and choose **Create a new script**.
+In the browser you use for Canvas, click its store link below (or type the address into the address bar):
+
+- **Chrome:** [Chrome Web Store](https://chromewebstore.google.com/) — `chromewebstore.google.com`
+- **Edge:** [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/) — `microsoftedge.microsoft.com/addons`
+- **Firefox:** [Firefox Add-ons](https://addons.mozilla.org/) — `addons.mozilla.org`
+
+Search the store for **Tampermonkey**, open its listing, and click **Add to Chrome**, **Get**, or **Add to Firefox**, then confirm installation. Click the Tampermonkey icon in your browser's Extensions menu and choose **Create a new script**.
 
 Open `Canvas-Grade-All-by-Question.user.js`, copy its full contents into a new Tampermonkey script, and save. Enable only one copy of the script. Refresh SpeedGrader after saving or discarding any unsaved edits.
 
