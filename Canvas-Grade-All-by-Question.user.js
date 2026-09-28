@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Canvas - Grade All by Question
 // @namespace    mort.canvas
-// @version      0.4.8
+// @version      0.4.9
 // @description  Batch-edit scores and comments for one Classic Quiz question; save changed students with verification.
 // @match        https://*.instructure.com/courses/*/gradebook/speed_grader*
 // @grant        none
@@ -751,6 +751,8 @@
                 <label class="mort-comment-label"><strong>Comment</strong><textarea class="mort-comment" rows="2"></textarea></label>`;
             e.card.insertBefore(box, e.tools);
             e.score = box.querySelector('.mort-score'); e.comment = box.querySelector('.mort-comment');
+            // Leave the wheel's normal scrolling behavior intact without stepping the score.
+            e.score.addEventListener('wheel', () => e.score.blur(), { passive: true });
             e.points = box.querySelector('.mort-points');
             e.score.value = e.result.score; e.comment.value = e.result.comment;
             e.scoreEdited = e.commentEdited = false;

@@ -2,7 +2,7 @@
 
 A Tampermonkey userscript for batch grading one Classic Canvas Quiz question across students in SpeedGrader.
 
-Current version: **0.4.8**.
+Current version: **0.4.9**.
 
 ## Install
 
@@ -26,6 +26,8 @@ The script currently matches HTTPS Canvas domains under `instructure.com` and Cl
 4. Select **Save All Changes** to save changed students sequentially. Each save is re-fetched and verified; an individual failure does not stop the remaining students.
 
 Cancel, close, and question changes warn about unsaved edits. They never save automatically. Successfully saving a batch keeps the interface open.
+
+Scrolling over a score box removes focus from it so the mouse wheel scrolls without changing the score. Click the box again to continue typing or adjusting the score with the keyboard.
 
 ## Response labels
 
